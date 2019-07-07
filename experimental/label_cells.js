@@ -13,5 +13,5 @@ var parser = new htmlparser.Parser(handler);
 fs.readFile("data/msft-test.htm", "utf8", function(err, data) {
     if (err) throw err;
     parser.parseComplete(data);
-    sys.puts(sys.inspect(handler.dom, false, null));
+    console.log(sys.inspect(handler.dom, false, null));
 });
