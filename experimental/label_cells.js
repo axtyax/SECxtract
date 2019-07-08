@@ -7,3 +7,4 @@ fs.readFile("data/msft-test.htm", "utf8", function(err, data) {
     const root = HTMLParser.parse(data);
     console.log(root);
 });
+
